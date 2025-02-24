@@ -22,12 +22,9 @@ module.exports = {
   },
   plugins: ["react-refresh"],
   rules: {
-    "react-refresh/only-export-components": [
-      "warn",
-      { allowConstantExport: true },
-    ],
+    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "react/prop-types": "off", // Disables props validation checking
-    "no-unused-vars": "warn", // Disables unused variables checking
+    "no-unused-vars": "off", // Disables unused variables checking
     "@typescript-eslint/no-unused-vars": "off", // Disables TypeScript unused variables checking
   },
 };
